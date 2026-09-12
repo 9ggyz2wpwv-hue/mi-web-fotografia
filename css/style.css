@@ -67,12 +67,15 @@ p {
 
 .btn {
   display: inline-block;
+  background: transparent;
   border: 1px solid var(--accent);
   color: var(--text);
   padding: 0.8em 1.8em;
+  font-family: inherit;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  cursor: pointer;
   transition: background 0.25s ease, color 0.25s ease;
 }
 

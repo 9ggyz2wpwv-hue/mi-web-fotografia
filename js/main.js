@@ -133,7 +133,7 @@ function initContactForm() {
 
     const subject = encodeURIComponent(`Nuevo mensaje de ${name} desde la web`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:hola@tuweb.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:marclidon37@gmail.com?subject=${subject}&body=${body}`;
 
     status.textContent = 'Abriendo tu cliente de correo para enviar el mensaje...';
     status.style.color = '#c9a15a';
