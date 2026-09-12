@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería — Lente &amp; Luz Fotografía</title>
+  <meta name="description" content="Explora retratos, bodas, eventos, naturaleza y más en la galería de Lente & Luz Fotografía." />
+  <link rel="icon" href="images/placeholder-6.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.replace("no-js","js");</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand">Lente<span>&amp;</span>Luz</a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html" aria-current="page">Galería</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow">Portafolio</p>
+        <h1>Galería</h1>
+        <p>Una muestra de sesiones de retratos, bodas, eventos y naturaleza.</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="gallery-filters">
+          <button data-filter="todos" class="is-active">Todos</button>
+          <button data-filter="retratos">Retratos</button>
+          <button data-filter="bodas">Bodas</button>
+          <button data-filter="eventos">Eventos</button>
+          <button data-filter="naturaleza">Naturaleza</button>
+          <button data-filter="familia">Familia</button>
+          <button data-filter="moda">Moda</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="retratos">
+            <img src="images/placeholder-1.svg" alt="Retrato en estudio con luz natural" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Retratos</span>
+          </div>
+          <div class="gallery-item" data-category="bodas">
+            <img src="images/placeholder-2.svg" alt="Sesión de boda al atardecer" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Bodas</span>
+          </div>
+          <div class="gallery-item" data-category="naturaleza">
+            <img src="images/placeholder-3.svg" alt="Paisaje natural al amanecer" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Naturaleza</span>
+          </div>
+          <div class="gallery-item" data-category="eventos">
+            <img src="images/placeholder-4.svg" alt="Cobertura de evento corporativo" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Eventos</span>
+          </div>
+          <div class="gallery-item" data-category="moda">
+            <img src="images/placeholder-7.svg" alt="Editorial de moda en exteriores" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Moda</span>
+          </div>
+          <div class="gallery-item" data-category="retratos">
+            <img src="images/placeholder-6.svg" alt="Retrato artístico en blanco y negro" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Blanco y negro</span>
+          </div>
+          <div class="gallery-item" data-category="familia">
+            <img src="images/placeholder-9.svg" alt="Sesión familiar en exteriores" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Familia</span>
+          </div>
+          <div class="gallery-item" data-category="bodas">
+            <img src="images/placeholder-5.svg" alt="Detalles de decoración de boda" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Producto</span>
+          </div>
+          <div class="gallery-item" data-category="naturaleza">
+            <img src="images/placeholder-8.svg" alt="Fotografía de viajes y paisajes" loading="lazy" width="800" height="600" />
+            <span class="gallery-item__caption">Viajes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container section-heading">
+        <p class="eyebrow">¿Te gusta lo que ves?</p>
+        <h2>Hablemos de tu sesión</h2>
+        <a href="contacto.html" class="btn">Reservar sesión</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 Lente &amp; Luz Fotografía. Todos los derechos reservados.</p>
+      <ul class="footer-social">
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Pinterest</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox__prev" aria-label="Anterior">&larr;</button>
+    <img src="" alt="" />
+    <button class="lightbox__next" aria-label="Siguiente">&rarr;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
