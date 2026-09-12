@@ -1,160 +1,366 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lente &amp; Luz Fotografía — Fotógrafa profesional</title>
-  <meta name="description" content="Fotografía de bodas, retratos y eventos con un estilo natural y atemporal. Reserva tu sesión hoy." />
-  <link rel="icon" href="images/placeholder-6.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script>document.documentElement.classList.replace("no-js","js");</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elena Vidal Fotografía | Fotógrafa Profesional</title>
+<meta name="description" content="Fotógrafa profesional especializada en bodas, retratos y eventos. Capturando momentos que duran para siempre.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__brand">Lente<span>&amp;</span>Luz</a>
-      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <ul class="nav__links">
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="sobre-mi.html">Sobre mí</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-camera"><i class="fa-solid fa-camera"></i></div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">Elena Vidal <span>Fotografía</span></a>
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+      <a href="#portafolio" class="nav-link">Portafolio</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#testimonios" class="nav-link">Testimonios</a>
+      <a href="#contacto" class="nav-link nav-cta">Contacto</a>
     </nav>
-  </header>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-  <main>
-    <section class="hero" style="background-image: url('images/hero.svg');">
-      <div class="hero__content">
-        <p class="eyebrow">Fotógrafa profesional · Basada en tu ciudad</p>
-        <h1>Historias contadas a través de la luz</h1>
-        <p class="hero__tagline">Bodas, retratos y eventos capturados con un estilo natural, cálido y atemporal. Cada sesión se cuenta como fue vivida.</p>
-        <div class="hero__actions">
-          <a href="contacto.html" class="btn">Reservar sesión</a>
-          <a href="galeria.html" class="btn btn--ghost">Ver galería</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="intro">
-      <div class="container section-heading reveal">
-        <p class="eyebrow">Bienvenido</p>
-        <h2>Más de 8 años capturando momentos que importan</h2>
-        <p>Creo en la fotografía honesta: sin poses forzadas, sin filtros que cambien quién eres. Mi trabajo combina luz natural, composición cuidada y un ojo atento al detalle para que cada imagen se sienta genuina.</p>
-      </div>
-    </section>
-
-    <section class="featured">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Trabajo destacado</p>
-          <h2>Una selección de sesiones recientes</h2>
-        </div>
-        <div class="gallery-grid reveal">
-          <a class="gallery-item" href="galeria.html">
-            <img src="images/placeholder-2.svg" alt="Sesión de boda al atardecer" loading="lazy" width="800" height="600" />
-            <span class="gallery-item__caption">Bodas</span>
-          </a>
-          <a class="gallery-item" href="galeria.html">
-            <img src="images/placeholder-1.svg" alt="Retrato en estudio con luz natural" loading="lazy" width="800" height="600" />
-            <span class="gallery-item__caption">Retratos</span>
-          </a>
-          <a class="gallery-item" href="galeria.html">
-            <img src="images/placeholder-4.svg" alt="Cobertura de evento corporativo" loading="lazy" width="800" height="600" />
-            <span class="gallery-item__caption">Eventos</span>
-          </a>
-          <a class="gallery-item" href="galeria.html">
-            <img src="images/placeholder-9.svg" alt="Sesión familiar en exteriores" loading="lazy" width="800" height="600" />
-            <span class="gallery-item__caption">Familia</span>
-          </a>
-          <a class="gallery-item" href="galeria.html">
-            <img src="images/placeholder-3.svg" alt="Paisaje natural al amanecer" loading="lazy" width="800" height="600" />
-            <span class="gallery-item__caption">Naturaleza</span>
-          </a>
-          <a class="gallery-item" href="galeria.html">
-            <img src="images/placeholder-6.svg" alt="Retrato artístico en blanco y negro" loading="lazy" width="800" height="600" />
-            <span class="gallery-item__caption">Blanco y negro</span>
-          </a>
-        </div>
-        <div style="text-align:center; margin-top: 2.5rem;">
-          <a href="galeria.html" class="btn btn--ghost">Ver toda la galería</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="services">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Servicios</p>
-          <h2>Paquetes pensados para cada ocasión</h2>
-        </div>
-        <div class="services-grid reveal">
-          <div class="service-card">
-            <h3>Retratos</h3>
-            <span class="price">Desde 120€</span>
-            <p>Sesión individual o en pareja de 1 hora, en estudio o exteriores, con 20 fotos editadas.</p>
-            <a href="contacto.html" class="btn btn--ghost">Consultar</a>
-          </div>
-          <div class="service-card">
-            <h3>Bodas</h3>
-            <span class="price">Desde 950€</span>
-            <p>Cobertura completa del día, desde los preparativos hasta la fiesta, con álbum digital incluido.</p>
-            <a href="contacto.html" class="btn btn--ghost">Consultar</a>
-          </div>
-          <div class="service-card">
-            <h3>Eventos</h3>
-            <span class="price">Desde 300€</span>
-            <p>Cobertura fotográfica para eventos corporativos, cumpleaños y celebraciones privadas.</p>
-            <a href="contacto.html" class="btn btn--ghost">Consultar</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Testimonios</p>
-          <h2>Lo que dicen mis clientes</h2>
-        </div>
-        <div class="testimonial-grid reveal">
-          <div class="testimonial">
-            <p>"Superó todas nuestras expectativas. Las fotos de la boda cuentan exactamente cómo se sintió ese día."</p>
-            <cite>— Marta y Diego</cite>
-          </div>
-          <div class="testimonial">
-            <p>"Muy profesional y con un ojo increíble para la luz natural. Las fotos de familia quedaron preciosas."</p>
-            <cite>— Laura Fernández</cite>
-          </div>
-          <div class="testimonial">
-            <p>"Rápida, atenta y con resultados espectaculares para nuestro evento corporativo."</p>
-            <cite>— Estudio Verde</cite>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container section-heading reveal">
-        <p class="eyebrow">¿Hablamos?</p>
-        <h2>Reserva tu sesión</h2>
-        <p>Cuéntame tu idea y te responderé en menos de 24 horas con disponibilidad y presupuesto.</p>
-        <a href="contacto.html" class="btn">Escríbeme</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>&copy; 2026 Lente &amp; Luz Fotografía. Todos los derechos reservados.</p>
-      <ul class="footer-social">
-        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Pinterest</a></li>
-      </ul>
+<!-- Hero -->
+<section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content" data-aos>
+    <p class="hero-kicker">Fotografía de bodas, retratos &amp; eventos</p>
+    <h1 class="hero-title">Capturamos historias,<br> no solo fotografías</h1>
+    <p class="hero-subtitle">Con base en Madrid, disponible para bodas y sesiones en toda España</p>
+    <div class="hero-actions">
+      <a href="#portafolio" class="btn btn-primary">Ver Portafolio</a>
+      <a href="#contacto" class="btn btn-outline">Reservar Sesión</a>
     </div>
-  </footer>
+  </div>
+  <a href="#sobre-mi" class="scroll-down" aria-label="Desplazarse hacia abajo"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
 
-  <script src="js/main.js"></script>
+<!-- Stats strip -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-item" data-aos>
+      <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+      <p>Años de experiencia</p>
+    </div>
+    <div class="stat-item" data-aos>
+      <span class="stat-number" data-count="350">0</span><span class="stat-plus">+</span>
+      <p>Bodas fotografiadas</p>
+    </div>
+    <div class="stat-item" data-aos>
+      <span class="stat-number" data-count="1200">0</span><span class="stat-plus">+</span>
+      <p>Sesiones realizadas</p>
+    </div>
+    <div class="stat-item" data-aos>
+      <span class="stat-number" data-count="98">0</span><span class="stat-plus">%</span>
+      <p>Clientes satisfechos</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre mí -->
+<section class="about" id="sobre-mi">
+  <div class="container about-grid">
+    <div class="about-image" data-aos>
+      <div class="about-image-frame">
+        <div class="ph-image ph-portrait"><i class="fa-solid fa-camera-retro"></i></div>
+      </div>
+      <div class="about-badge">
+        <strong>10+</strong>
+        <span>años capturando emociones</span>
+      </div>
+    </div>
+    <div class="about-content" data-aos>
+      <p class="section-kicker">Sobre mí</p>
+      <h2 class="section-title">Hola, soy Elena — <br>tu fotógrafa de confianza</h2>
+      <p class="about-text">
+        Desde hace más de una década me dedico a contar historias a través de mi cámara.
+        Creo firmemente que cada persona, cada pareja y cada familia tiene una historia única
+        que merece ser recordada con autenticidad, luz natural y mucho cariño.
+      </p>
+      <p class="about-text">
+        Mi estilo combina la fotografía documental con retratos cuidadosamente compuestos,
+        buscando siempre momentos genuinos por encima de las poses forzadas.
+      </p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-check"></i> Equipo profesional de última generación</li>
+        <li><i class="fa-solid fa-check"></i> Entrega digital en menos de 3 semanas</li>
+        <li><i class="fa-solid fa-check"></i> Álbumes impresos de alta calidad</li>
+        <li><i class="fa-solid fa-check"></i> Disponible para viajar a cualquier destino</li>
+      </ul>
+      <a href="#contacto" class="btn btn-primary">Hablemos de tu proyecto</a>
+    </div>
+  </div>
+</section>
+
+<!-- Portafolio -->
+<section class="portfolio" id="portafolio">
+  <div class="container">
+    <div class="section-header center" data-aos>
+      <p class="section-kicker">Portafolio</p>
+      <h2 class="section-title">Trabajos recientes</h2>
+      <p class="section-desc">Una selección de mis sesiones favoritas. Cada imagen cuenta una historia distinta.</p>
+    </div>
+
+    <div class="filters" data-aos>
+      <button class="filter-btn active" data-filter="all">Todo</button>
+      <button class="filter-btn" data-filter="bodas">Bodas</button>
+      <button class="filter-btn" data-filter="retratos">Retratos</button>
+      <button class="filter-btn" data-filter="eventos">Eventos</button>
+      <button class="filter-btn" data-filter="naturaleza">Naturaleza</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Gallery items injected/duplicated via markup below -->
+      <div class="gallery-item" data-category="bodas" data-aos>
+        <div class="ph-image ph-1"><i class="fa-solid fa-ring"></i></div>
+        <div class="gallery-overlay"><span>Boda · Ana &amp; Luis</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="retratos" data-aos>
+        <div class="ph-image ph-2"><i class="fa-solid fa-user"></i></div>
+        <div class="gallery-overlay"><span>Retrato · Estudio</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="naturaleza" data-aos>
+        <div class="ph-image ph-3"><i class="fa-solid fa-mountain-sun"></i></div>
+        <div class="gallery-overlay"><span>Paisaje · Pirineos</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="eventos" data-aos>
+        <div class="ph-image ph-4"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <div class="gallery-overlay"><span>Evento · Corporativo</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="bodas" data-aos>
+        <div class="ph-image ph-5"><i class="fa-solid fa-heart"></i></div>
+        <div class="gallery-overlay"><span>Boda · Marta &amp; Carlos</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="retratos" data-aos>
+        <div class="ph-image ph-6"><i class="fa-solid fa-person"></i></div>
+        <div class="gallery-overlay"><span>Retrato · Exterior</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="naturaleza" data-aos>
+        <div class="ph-image ph-7"><i class="fa-solid fa-tree"></i></div>
+        <div class="gallery-overlay"><span>Naturaleza · Bosque</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="eventos" data-aos>
+        <div class="ph-image ph-8"><i class="fa-solid fa-music"></i></div>
+        <div class="gallery-overlay"><span>Evento · Concierto</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-category="bodas" data-aos>
+        <div class="ph-image ph-9"><i class="fa-solid fa-cake-candles"></i></div>
+        <div class="gallery-overlay"><span>Boda · Celebración</span><i class="fa-solid fa-expand"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="section-header center" data-aos>
+      <p class="section-kicker">Servicios</p>
+      <h2 class="section-title">Paquetes y precios</h2>
+      <p class="section-desc">Planes flexibles adaptados a cada tipo de sesión. ¿Necesitas algo a medida? Contáctame.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card" data-aos>
+        <div class="pricing-icon"><i class="fa-solid fa-user-large"></i></div>
+        <h3>Sesión de Retrato</h3>
+        <p class="pricing-price">150€ <span>/ sesión</span></p>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> 1 hora de sesión</li>
+          <li><i class="fa-solid fa-check"></i> 1 localización</li>
+          <li><i class="fa-solid fa-check"></i> 30 fotos editadas</li>
+          <li><i class="fa-solid fa-check"></i> Entrega digital online</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline btn-block">Reservar</a>
+      </div>
+
+      <div class="pricing-card featured" data-aos>
+        <span class="pricing-tag">Más popular</span>
+        <div class="pricing-icon"><i class="fa-solid fa-ring"></i></div>
+        <h3>Boda Completa</h3>
+        <p class="pricing-price">1.200€ <span>/ boda</span></p>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Cobertura de 8 horas</li>
+          <li><i class="fa-solid fa-check"></i> 2 fotógrafos</li>
+          <li><i class="fa-solid fa-check"></i> +500 fotos editadas</li>
+          <li><i class="fa-solid fa-check"></i> Álbum impreso premium</li>
+          <li><i class="fa-solid fa-check"></i> Sesión de preboda incluida</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary btn-block">Reservar</a>
+      </div>
+
+      <div class="pricing-card" data-aos>
+        <div class="pricing-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <h3>Cobertura de Evento</h3>
+        <p class="pricing-price">400€ <span>/ evento</span></p>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Hasta 4 horas</li>
+          <li><i class="fa-solid fa-check"></i> 1 fotógrafo</li>
+          <li><i class="fa-solid fa-check"></i> 150 fotos editadas</li>
+          <li><i class="fa-solid fa-check"></i> Entrega en 1 semana</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline btn-block">Reservar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+<section class="testimonials" id="testimonios">
+  <div class="container">
+    <div class="section-header center" data-aos>
+      <p class="section-kicker">Testimonios</p>
+      <h2 class="section-title">Lo que dicen mis clientes</h2>
+    </div>
+
+    <div class="testimonial-slider" data-aos>
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Elena capturó nuestra boda de una forma que nunca imaginamos. Cada foto se siente natural y llena de emoción. ¡Totalmente recomendada!"</p>
+          <div class="testimonial-author">
+            <div class="avatar"><i class="fa-solid fa-user"></i></div>
+            <div><strong>Ana &amp; Luis</strong><span>Boda, Junio 2025</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Profesional, puntual y con un ojo increíble para el detalle. Mi sesión de retratos corporativos quedó espectacular."</p>
+          <div class="testimonial-author">
+            <div class="avatar"><i class="fa-solid fa-user"></i></div>
+            <div><strong>Roberto Sánchez</strong><span>Retrato corporativo</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Nos ayudó a sentirnos cómodos frente a la cámara y el resultado fue mejor de lo esperado. ¡Gracias por tanto cariño!"</p>
+          <div class="testimonial-author">
+            <div class="avatar"><i class="fa-solid fa-user"></i></div>
+            <div><strong>Marta &amp; Carlos</strong><span>Boda, Abril 2025</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA banda -->
+<section class="cta-band">
+  <div class="container cta-band-inner" data-aos>
+    <h2>¿Lista/o para capturar tu momento especial?</h2>
+    <p>Cuéntame tu idea y creemos juntos algo inolvidable.</p>
+    <a href="#contacto" class="btn btn-light">Contáctame ahora</a>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section class="contact" id="contacto">
+  <div class="container contact-grid">
+    <div class="contact-info" data-aos>
+      <p class="section-kicker">Contacto</p>
+      <h2 class="section-title">Hablemos de tu sesión</h2>
+      <p class="section-desc">Rellena el formulario o contáctame directamente. Normalmente respondo en menos de 24 horas.</p>
+
+      <div class="contact-items">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong>Email</strong><span>hola@elenavidalfoto.com</span></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div><strong>Teléfono</strong><span>+34 600 123 456</span></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Estudio</strong><span>Madrid, España</span></div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-aos>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service">Tipo de sesión</label>
+          <select id="service" name="service">
+            <option value="boda">Boda</option>
+            <option value="retrato">Retrato</option>
+            <option value="evento">Evento</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Fecha aproximada</label>
+          <input type="date" id="date" name="date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#inicio" class="logo footer-logo">Elena Vidal <span>Fotografía</span></a>
+    <nav class="footer-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Elena Vidal Fotografía. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="js/script.js"></script>
 </body>
 </html>
