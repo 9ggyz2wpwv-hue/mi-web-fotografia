@@ -6,6 +6,7 @@ Sitio web estático (HTML, CSS y JS puro, sin frameworks ni dependencias) para e
 
 - `index.html` — Página de inicio
 - `galeria.html` — Galería con filtros por categoría y lightbox
+- `servicios.html` — Los 5 pilares de servicio (fotografía, video, redes, ads y web)
 - `sobre-mi.html` — Página del fotógrafo
 - `contacto.html` — Formulario y datos de contacto
 - `css/style.css` — Estilos
