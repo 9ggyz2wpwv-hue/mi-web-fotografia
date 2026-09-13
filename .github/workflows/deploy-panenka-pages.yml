@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/great-ramanujan-afyfvn
       - claude/eager-turing-unsjai
     paths:
       - "panenka/**"
@@ -30,6 +31,8 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
