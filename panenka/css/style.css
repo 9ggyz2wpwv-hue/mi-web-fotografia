@@ -769,6 +769,35 @@ section { padding: 6.5rem 0; }
 .footer-links li { margin-bottom: 0.55rem; font-size: 0.88rem; }
 .footer-links a:hover { color: var(--marfil); }
 
+.icon-list li,
+.icon-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.icon-list a { color: rgba(247,244,238,0.6); transition: color 0.2s ease; }
+.icon-list a:hover { color: var(--marfil); }
+
+.icon-list .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--terracota);
+}
+.icon-list .icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+}
+.icon-list .icon--instagram svg,
+.icon-list .icon--tiktok svg {
+  fill: currentColor;
+}
+.icon-list a:hover .icon { color: var(--arena); }
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
