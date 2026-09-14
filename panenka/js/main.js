@@ -66,11 +66,11 @@
       var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (!nombre || !email) {
-        setStatus("Por favor, completa tu nombre y email.", "error");
+        setStatus("Per favore, completa nome ed email.", "error");
         return;
       }
       if (!emailPattern.test(email)) {
-        setStatus("Introduce un email válido.", "error");
+        setStatus("Inserisci un'email valida.", "error");
         return;
       }
 
@@ -80,22 +80,22 @@
       var mensaje = form.mensaje.value.trim();
 
       var bodyLines = [
-        "Nombre: " + nombre,
-        "Empresa: " + (empresa || "-"),
+        "Nome: " + nombre,
+        "Azienda: " + (empresa || "-"),
         "Email: " + email,
-        "Teléfono: " + (telefono || "-"),
-        "Interés: " + interes,
+        "Telefono: " + (telefono || "-"),
+        "Interesse: " + interes,
         "",
-        "Mensaje:",
+        "Messaggio:",
         mensaje || "-"
       ];
 
-      var subject = encodeURIComponent("Solicitud de reunión — " + nombre);
+      var subject = encodeURIComponent("Richiesta di incontro — " + nombre);
       var body = encodeURIComponent(bodyLines.join("\n"));
       var mailtoLink = "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
 
       window.location.href = mailtoLink;
-      setStatus("Abriendo tu cliente de correo para enviar la solicitud...", "success");
+      setStatus("Apertura del client email in corso...", "success");
     });
   }
 })();
